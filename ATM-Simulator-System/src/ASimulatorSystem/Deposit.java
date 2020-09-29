@@ -162,6 +162,13 @@ public class Deposit extends JFrame implements ActionListener{
             
     }
     
+    
+    public int depositedCash (int ammountToBeDeposited, int amountInAccount) {
+        return amountInAccount+ammountToBeDeposited;   
+    }
+
+    
+    
     public static void main(String[] args){
         new Deposit().setVisible(true);
     }

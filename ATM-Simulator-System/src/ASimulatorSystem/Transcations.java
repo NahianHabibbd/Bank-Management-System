@@ -180,6 +180,14 @@ public class Transcations extends JFrame implements ActionListener{
         
     }
     
+    public int trans (int moneyDue, int cashAdvance, int current) {
+        return moneyDue+cashAdvance+current;   
+    }
+    
+    
+    
+    
+    
     public static void main(String[] args){
         new Transcations().setVisible(true);
     }

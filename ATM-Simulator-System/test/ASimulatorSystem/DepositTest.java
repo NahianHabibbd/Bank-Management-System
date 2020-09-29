@@ -13,18 +13,20 @@ import static org.junit.Assert.*;
  *
  * @author ifroi
  */
-public class WithdrawlTest {
-    Withdrawl W;
+public class DepositTest {
+    
+    Deposit D;
+    
     @Before
     public void setUp() {
-        W= new Withdrawl();
+        D = new Deposit();
     }
-
     /**
-     * Test of actionPerformed method, of class withD.
+     * Test of depositedCash method, of class Deposit.
      */
     @Test
-    public void testWithD() {
-        assertEquals(0,W.withD(200, 200));
-    }  
+    public void testDepositedCash() {
+        assertEquals(500,D.depositedCash(250, 250));
+    
+    }   
 }

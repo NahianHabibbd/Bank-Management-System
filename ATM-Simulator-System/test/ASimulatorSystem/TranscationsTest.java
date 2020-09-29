@@ -13,18 +13,19 @@ import static org.junit.Assert.*;
  *
  * @author ifroi
  */
-public class WithdrawlTest {
-    Withdrawl W;
+public class TranscationsTest {
+    Transcations T;
+    
     @Before
     public void setUp() {
-        W= new Withdrawl();
+        T = new Transcations();
     }
 
     /**
-     * Test of actionPerformed method, of class withD.
+     * Test of actionPerformed method, of class trans.
      */
     @Test
-    public void testWithD() {
-        assertEquals(0,W.withD(200, 200));
-    }  
+    public void testTrans() {
+        assertEquals(500, T.trans(100, 200, 200) );
+    }   
 }

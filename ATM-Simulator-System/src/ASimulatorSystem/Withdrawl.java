@@ -8,11 +8,6 @@ import java.sql.*;
 
 public class Withdrawl extends JFrame implements ActionListener{
     
-    
-    public int Calculate (int cash , int due) {
-        return cash-due;
-    }
-    
     JTextField t1,t2;
     JButton b1,b2,b3;
     JLabel l1,l2,l3,l4;
@@ -173,6 +168,16 @@ public class Withdrawl extends JFrame implements ActionListener{
             
     }
 
+    public int withD (int ammountToBeWithDrawn, int amountInAccount) {
+        return amountInAccount-ammountToBeWithDrawn;   
+    }
+    
+    
+    
+    
+    
+    
+    
     
     
     public static void main(String[] args){
